@@ -87,6 +87,6 @@ class search(twitter):
                 self.page = i['content']['operation']['cursor']['value']
                 return self.get_page()
 
-if __main__ == '__name__':
+if __name__ == '__main__':
     s = search('from:@SafaSafari3')
     print(json.dumps(s.get_page(), indent=4))
